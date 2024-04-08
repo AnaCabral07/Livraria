@@ -9,7 +9,7 @@ body {
 } */
 
 .image {
-    margin-top: auto;
+    margin-top: 70px;
     width: auto;
     height: 400px; 
 }
@@ -30,4 +30,8 @@ body {
 
 a {
     margin-top: 15px;
+}
+
+.user {
+    margin-top: 55%;
 }
