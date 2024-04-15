@@ -9,19 +9,28 @@ $login = $_POST['login'];
 $senha = $_POST['senha'];
 
 
-echo "$nome";
-echo "<br>";
-echo "$setor";
-echo "<br>";
-echo "$login";
-echo "<br>";
-echo "$senha";
-echo "<br>";
+// echo "$nome";
+// echo "<br>";
+// echo "$setor";
+// echo "<br>";
+// echo "$login";
+// echo "<br>";
+// echo "$senha";
+// echo "<br>";
 
 
 
-print_r($_POST);
+// print_r($_POST);
 
+include 'conexao.php';
+
+//Dados para inserir os dados
+$insert = "INSERT INTO tb_user VALUES (NULL, '$nome', '$setor', '$login', '$senha')";
+
+//inserindo os dados no banco de dados utilizando a função mysqli
+$query = mysqli_query($conexao, $insert);
+
+echo "Inserido com sucesso";
 
 
 ?>
