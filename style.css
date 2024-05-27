@@ -1,0 +1,55 @@
+body {
+    background-color: #333 !important; 
+    
+}
+
+/* form {
+    margin-top: 15%;
+    
+} */
+
+.image {
+    margin-top: 70px;
+    width: auto;
+    height: 400px; 
+}
+
+.form-label {
+    color: white;
+}
+
+.botao {
+    margin-top: 30px;
+}
+
+.btn {
+    color: white;
+    width: 100%;
+    font-size: 20px;
+}
+
+a {
+    margin-top: 15px;
+}
+
+.user {
+    margin-top: 55%;
+}
+
+.corfundo {
+    background-color: #34495E;
+    text-align: center;
+}
+
+.navbar {
+    background-color: rgb(21, 5, 66) !important;
+}
+
+.navbar ul li a {
+    color: rgb(10, 44, 44) !important;
+}
+
+.fa-solid{
+    color: rgb(230, 10, 10);
+    font-size: 30px;
+}
