@@ -35,21 +35,3 @@ a {
 .user {
     margin-top: 55%;
 }
-
-.corfundo {
-    background-color: #34495E;
-    text-align: center;
-}
-
-.navbar {
-    background-color: rgb(21, 5, 66) !important;
-}
-
-.navbar ul li a {
-    color: rgb(10, 44, 44) !important;
-}
-
-.fa-solid{
-    color: rgb(230, 10, 10);
-    font-size: 30px;
-}

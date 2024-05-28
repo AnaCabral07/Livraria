@@ -4,11 +4,11 @@ ini_set('display_errors', 1);
 
 // Recebendo dados do formulário
 // Recebendo dados do formulário e validando
-$nome = $_POST['nome'];
-$nmendereco = $_POST['nmendereco'];
-$nrendereco = isset($_POST['nrendereco']) ? intval($_POST['nrendereco']) : 0;
-$nrcnpj = isset($_POST['nrcnpj']) ? intval($_POST['nrcnpj']) : 0;
-$nrtelefone = isset($_POST['nrtelefone']) ? intval($_POST['nrtelefone']) : 0;
+$nome = $_POST['nm_nome'];
+$nmendereco = $_POST['nm_endereco'];
+$nrendereco = $_POST['nr_endereco'];
+$nrcnpj = $_POST['nr_cnpj'];
+$nrtelefone = $_POST['nr_telefone'];
 
 include 'conexao.php';
 

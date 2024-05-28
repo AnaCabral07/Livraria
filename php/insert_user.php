@@ -3,7 +3,7 @@
 //array variável que consegue receber mais de uma informação, armazena em índices
 //variável só recebe um valor por vez
 
-$nome = $_POST['nome'];
+$nome = $_POST['nm'];
 $setor = $_POST['setor'];
 $login = $_POST['login'];
 $senha = $_POST['senha'];

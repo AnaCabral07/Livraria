@@ -64,6 +64,9 @@
   <tbody>
     
 <?php
+
+include 'conexao.php';
+
 $select = "SELECT * FROM tb_editora";
 
 $query = mysqli_query($conexao, $select);
@@ -72,30 +75,15 @@ while ($result = mysqli_fetch_array($query)) {
 ?>
 
 <tr>
-      <th scope="row"><td><?php echo $result['cd_editora']; ?> </th>
+      <td><?php echo $result['cd_editora']; ?> </td>
       <td><?php echo $result['nm_editora']; ?> </td>
       <td><?php echo $result['nm_endereco_edi']; ?> </td>
       <td><?php echo $result['nr_endereco_edi']; ?> </td>
       <td><?php echo $result['nr_cnpj_edi']; ?> </td>
       <td><?php echo $result['nr_telefone_edi']; ?> </td>
     </tr>
-<!-- 
 <?php } ?>
 
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td colspan="2">Larry the Bird</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody>
-</table>
-</div> -->
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
