@@ -28,19 +28,19 @@
             <a class="nav-link" aria-current="page" href="../index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="cadastro_user.html">Cadastro de Clientes</a>
+            <a class="nav-link" href="../pages/C_cliente.html">Cadastro de Clientes</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./c_editora.html">Cadastro de Editora</a>
+            <a class="nav-link" href="../pages/c_editora.html">Cadastro de Editora</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Relatórios
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="../php/listar_user.php">Lista de Usuários</a></li>
-              <li><a class="dropdown-item" href="../php/listar_clientes.php">Lista de Clientes</a></li>
-              <li><a class="dropdown-item" href="../php/listar_editora.php">Lista de Editoras</a></li>
+              <li><a class="dropdown-item" href="listar_user.php">Lista de Usuários</a></li>
+              <li><a class="dropdown-item" href="listar_clientes.php">Lista de Clientes</a></li>
+              <li><a class="dropdown-item" href="listar_editora.php">Lista de Editoras</a></li>
             </ul>
           </li>
         </ul>

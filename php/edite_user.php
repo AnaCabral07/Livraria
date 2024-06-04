@@ -27,11 +27,11 @@
                 </div>
                 <div class="mb-3">
                   <label for="exampleInputEmail1" class="form-label">Nome</label>
-                  <input type="text" value="<?php echo $result['nm_user']; ?>" class="form-control" id="exampleInputEmail1" name="nome" aria-describedby="emailHelp">
+                  <input type="text" value="<?php echo $result['nm_usuario']; ?>" class="form-control" id="exampleInputEmail1" name="nome" aria-describedby="emailHelp">
                 </div>
                 <div class="mb-3">
                   <label for="exampleInputEmail1" class="form-label">Setor</label>
-                  <input type="text" value="<?php echo $result['setor']; ?>" class="form-control" id="exampleInputEmail1" name="setor" aria-describedby="emailHelp">
+                  <input type="text" value="<?php echo $result['nm_setor']; ?>" class="form-control" id="exampleInputEmail1" name="setor" aria-describedby="emailHelp">
                 </div>
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Login</label>

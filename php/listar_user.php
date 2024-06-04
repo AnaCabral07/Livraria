@@ -29,10 +29,10 @@
             <a class="nav-link" aria-current="page" href="../index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="cadastro_user.html">Cadastro de Clientes</a>
+            <a class="nav-link" href="../pages/C_cliente.html">Cadastro de Clientes</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./c_editora.html">Cadastro de Editora</a>
+            <a class="nav-link" href="../pages/c_editora.html">Cadastro de Editora</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -66,9 +66,13 @@
 </thead>
 <tbody>
 <?php
+
 include 'conexao.php';
+
 $select = "SELECT * FROM tb_user";
+
 $query = mysqli_query($conexao,$select);
+
 while ($result =  mysqli_fetch_array($query)) { ?>
 <tr>
   <td scope="row"><?php echo $result['id_user']; ?></td>
@@ -77,7 +81,7 @@ while ($result =  mysqli_fetch_array($query)) { ?>
   <td><?php echo $result['login']; ?></td>
   <td>
     <a href="edite_user.php?cod=<?php echo $result['id_user']; ?>"> <i class="icon fa-solid fa-user-pen"></i></a>
-    <a href=""><i class="icon2 fa-solid fa-trash"></i></a> 
+    <a href="deletar_user.php?cod=<?php echo $result['id_user']; ?>"> <i class="icon2 fa-solid fa-trash"></i></a> 
 </td>
 </tr>
 
