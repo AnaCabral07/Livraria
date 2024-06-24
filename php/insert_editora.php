@@ -4,16 +4,16 @@ ini_set('display_errors', 1);
 
 // Recebendo dados do formulário
 // Recebendo dados do formulário e validando
-$nome = $_POST['nm_nome'];
-$nmendereco = $_POST['nm_endereco'];
-$nrendereco = $_POST['nr_endereco'];
-$nrcnpj = $_POST['nr_cnpj'];
-$nrtelefone = $_POST['nr_telefone'];
+$nm_editora = $_POST['nm_editora'];
+$nm_endereco_edi = $_POST['nm_endereco_edi'];
+$nr_endereco_edi = $_POST['nr_endereco_edi'];
+$nr_cnpj_edi = $_POST['nr_cnpj_edi'];
+$nr_telefone_edi = $_POST['nr_telefone_edi'];
 
 include 'conexao.php';
 
 //Dados para inserir os dados
-$insert = "INSERT INTO tb_editora VALUES (NULL, '$nome', '$nmendereco', '$nrendereco', '$nrcnpj', '$nrtelefone ')";
+$insert = "INSERT INTO tb_editora VALUES (NULL, '$nm_editora', '$nm_endereco_edi', '$nr_endereco_edi', '$nr_cnpj_edi', '$nr_telefone_edi')";
 
 //inserindo os dados no banco de dados utilizando a função mysqli
 $query = mysqli_query($conexao, $insert);

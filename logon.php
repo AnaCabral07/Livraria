@@ -5,7 +5,7 @@ $nome = $_POST['login'];
 $senha = $_POST['senha'];
 
 //incluindo arquivo de conexão
-include 'conexao.php';
+include 'php/conexao.php';
 
 //selecionar os dados no banco de dados
 $select = "SELECT * FROM tb_user WHERE login = '$nome'";
