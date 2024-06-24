@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1deb5ubuntu1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost:3306
--- Tempo de geração: 27-Maio-2024 às 18:19
--- Versão do servidor: 8.0.36-0ubuntu0.22.04.1
--- versão do PHP: 8.1.2-1ubuntu2.17
+-- Host: localhost
+-- Tempo de geração: 25-Jun-2024 às 01:11
+-- Versão do servidor: 8.0.27
+-- versão do PHP: 8.2.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -54,9 +54,9 @@ CREATE TABLE `tb_editora` (
   `cd_editora` int NOT NULL,
   `nm_editora` varchar(30) DEFAULT NULL,
   `nm_endereco_edi` varchar(60) DEFAULT NULL,
-  `nr_endereco_edi` int DEFAULT NULL,
-  `nr_cnpj_edi` int DEFAULT NULL,
-  `nr_telefone_edi` int DEFAULT NULL
+  `nr_endereco_edi` text,
+  `nr_cnpj_edi` text,
+  `nr_telefone_edi` text
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
@@ -64,9 +64,11 @@ CREATE TABLE `tb_editora` (
 --
 
 INSERT INTO `tb_editora` (`cd_editora`, `nm_editora`, `nm_endereco_edi`, `nr_endereco_edi`, `nr_cnpj_edi`, `nr_telefone_edi`) VALUES
-(1, 'Editora Brasil', 'Avenida Brasil', 5, 5, 0),
-(2, 'Editora Solemar', 'Avenida Solemar', 15, 14, 0),
-(3, 'Editora Ana', 'Rua Ana', 13, 20, 0);
+(1, 'Editora Brasil', 'Avenida Brasil', '5', '5', '0'),
+(2, 'Editora Solemar', 'Avenida Solemar', '15', '14', '0'),
+(3, 'Editora Ana', 'Rua Ana', '13', '20', '0'),
+(4, 'José', 'Carlinhos', '1', '2', '0'),
+(5, 'Camili', 'Costa', '333', '4444', '5555');
 
 -- --------------------------------------------------------
 
@@ -79,7 +81,7 @@ CREATE TABLE `tb_user` (
   `nm_usuario` varchar(45) NOT NULL,
   `nm_setor` varchar(45) NOT NULL,
   `login` varchar(45) NOT NULL,
-  `senha` varchar(45) NOT NULL
+  `senha` varchar(256) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
 
 --
@@ -93,7 +95,6 @@ INSERT INTO `tb_user` (`id_user`, `nm_usuario`, `nm_setor`, `login`, `senha`) VA
 (4, '1234', '1234', '4n4.informatica@gmail.com', 'bd_sistema'),
 (5, 'dfddf', 'fsdfdfdf', '4n4.informatica@gmail.com', 'bd_sistema'),
 (6, 'dfddf', 'fsdfdfdf', '4n4.informatica@gmail.com', 'bd_sistema'),
-(7, 'dfddf', 'fsdfdfdf', '4n4.informatica@gmail.com', 'bd_sistema'),
 (8, 'aninha', 'anona', 'ana@gmail.com', 'ananananana');
 
 --
@@ -132,7 +133,7 @@ ALTER TABLE `tb_cliente`
 -- AUTO_INCREMENT de tabela `tb_editora`
 --
 ALTER TABLE `tb_editora`
-  MODIFY `cd_editora` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `cd_editora` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT de tabela `tb_user`
